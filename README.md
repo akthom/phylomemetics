@@ -30,7 +30,7 @@ This is something that could be scripted in the future, but for now I do think i
      
 There are two kinds of characters: continuous and discrete.
 
--Continuous characters are things like dates, times, and resolutions.  These need to be "binned" into numerical categories (e.g. all datasets created between 1960-1970 get a 1, 1971-1980 get a 2, and so on).
+- Continuous characters are things like dates, times, and resolutions.  These need to be "binned" into numerical categories (e.g. all datasets created between 1960-1970 get a 1, 1971-1980 get a 2, and so on).
 - Discrete characters are things like scientific parameters, which are coded 0 or 1 for absence and presence, respectively.  So, if a metadata record says the dataset includes Sea Surface Temperature readings, I create a column that with the Term: SST, and the attribute of 1, and code the remaining datasets accordingly.
 - Big Excel file showing this processing is *gcmdProcessed.xlsx*
 - resulting dataset is *COADSGCMD.nex*
