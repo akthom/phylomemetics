@@ -4,8 +4,18 @@ phylomemetics
 scripts for scraping gcmd and making trees.
 
 full work described in: 
-Thomer, A. & Weber, N. (2014).  The Phylogeny of a Dataset.  Paper to be presented at Annual Meetin of the American Society for Information Science and Technology, 2014.  Seattle, WA.
+Thomer, A. & Weber, N. (2014).  The Phylogeny of a Dataset.  Paper presented at Annual Meetin of the American Society for Information Science and Technology, 2014.  Seattle, WA.
+=============
+5 Aug 2015
 
+Working on refining trees.  Starting with "Location" metadata. Cleaning and clustering terms in Open Refine, then exporting to csv/Excel
+
+**ICOADS_v_2_Location.xslx** = data + pivot tables for location-based trees
+**SimpleLocation.nex** = nexus file for TIER 1 location metadata (presence or absence of ocean, geographic region, vertical, etc metadata
+
+
+
+=============
 - most of these scripts are very simple, and were used to download and then parse html metadata downloaded from GCMD (should have downloaded XML but wanted to use some existing scripts I had). Workflow to parse metadata into :
 
      1. search for files and copy list of metadata records from GCMD
