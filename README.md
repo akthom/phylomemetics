@@ -13,8 +13,8 @@ Thomer, A. & Weber, N. (2014).  The Phylogeny of a Dataset.  Paper presented at 
 Working on refining trees.  Starting with "Location" metadata. Cleaning and clustering terms in Open Refine, then exporting to csv/Excel
 
 **ICOADS_v_2_Location.xslx** = data + pivot tables for location-based trees
-**SimpleLocation.nex** = nexus file for TIER 1 location metadata (presence or absence of ocean, geographic region, vertical, etc metadata
-
+**SimpleLocation.nex** = nexus file for TIER 1 location metadata (presence or absence of ocean, geographic region, vertical, etc metadata)
+**ComplexLocation.nex** = nexus file with TIER 2 location metadata(presence or absence of specific geographic regions, vertical locations, etc)
 
 
 =============
