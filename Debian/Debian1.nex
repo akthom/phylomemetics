@@ -1,0 +1,35 @@
+#NEXUS
+
+BEGIN TAXA;
+	TITLE Taxa;
+	DIMENSIONS NTAX=15;
+	TAXLABELS
+sid_unstable	stretch_testing	jessie_8	wheezy_7	squeeze_6	lenny_5	etch_4	sarge_3_1	woody_3	potato_2_2	slink_2_1	hamm_2	bo_1_3	rex_1_2	buzz_1_1	;
+
+END;
+
+
+BEGIN CHARACTERS;
+	TITLE  'Debian - simple presence/absence';
+	DIMENSIONS  NCHAR=85;
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2";
+	CHARSTATELABELS
+	version, 	EOL, 	CDs, 	Installation, 	DefaultDesktop, 	Calligra, 	Goffice, 	Koffice, 	OO_o, 	e, 	amd64, 	arm64, 	armel, 	armhf, 	i386, 	mips, 	mipsel, 	powerpc, 	ppc64el, 	s390x, 	sparc, 	alpha, 	arm, 	hppa, 	ia64, 	s390, 	m68k, 	Btrfs, 	ext3, 	ext4, 	JFS, 	ReiserFS, 	XFS, 	Asianlanguagesupport, 	abiword, 	alsa-lib, 	ati-driver, 	bash, 	bind, 	chromium, 	cups, 	dhcp, 	e2fsprogs, 	firefox, 	freetype, 	gcc, 	gimp, 	glibc, 	gnome-shell, 	gnucash, 	gnumeric, 	grub, 	gtk_plus, 	httpd, 	inkscape, 	k3b, 	kmod, 	libgnome, 	libreoffice, 	linux, 	lxde-common, 	mariadb, 	mate-desktop, 	mesa, 	mysql, 	nautilus, 	NVIDIA, 	openbox, 	openjdk, 	openssh, 	openssl, 	perl, 	php, 	plasma-desktop, 	postfix, 	postgresql, 	Python, 	qt, 	samba, 	systemd, 	thunderbird, 	vim, 	vlc, 	xfdesktop, 	xorg-server
+	;
+	MATRIX
+	sid_unstable	15	?	0	2	1	1	1	1	0	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	0	1	1	1	1	1	1	2	1	1	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+stretch_testing	14	?	0	2	1	1	1	1	0	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	0	1	1	1	1	1	1	2	1	1	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+jessie_8	13	1	0	2	1	1	1	1	0	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	0	1	1	1	1	1	1	2	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+wheezy_7	12	1	1	2	1	1	1	1	0	1	1	0	1	0	1	1	1	1	0	1	1	0	0	0	1	0	0	1	1	1	1	1	1	2	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+squeeze_6	11	1	1	2	1	0	1	1	1	0	1	0	1	0	1	1	1	1	0	0	1	0	0	0	1	1	0	0	1	1	1	1	1	2	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	1	1	0	1	1	1	1	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1
+lenny_5	10	0	1	2	1	0	1	1	1	0	1	0	1	0	1	1	1	1	0	0	1	1	1	1	1	1	0	0	1	0	1	1	1	2	1	1	1	1	1	0	1	1	1	1	1	1	1	1	0	1	1	1	1	1	1	1	0	1	1	1	1	0	0	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	0	1	1	1	1	1
+etch_4	9	0	1	2	1	0	1	1	1	0	1	0	0	0	1	1	1	1	0	0	1	1	1	1	1	1	1	0	1	0	1	1	1	2	1	1	1	1	1	0	1	1	1	1	1	1	1	1	0	1	1	1	1	1	1	1	0	1	1	1	0	0	0	1	1	1	1	1	0	1	1	1	1	0	1	1	1	1	1	0	1	1	1	1	1
+sarge_3_1	8	0	1	1	1	0	1	1	1	0	0	0	0	0	1	1	1	1	0	0	1	1	1	1	1	1	1	0	1	0	1	1	1	1	1	1	0	1	1	0	1	1	1	1	1	1	1	1	0	1	1	1	1	1	1	1	0	1	1	1	0	0	0	1	1	1	1	1	0	1	1	1	1	0	1	1	1	1	1	0	1	1	1	1	0
+woody_3	7	0	1	1	1	0	0	1	0	0	0	0	0	0	1	1	1	1	0	0	1	1	1	1	1	1	1	0	1	0	0	1	0	1	1	1	0	1	1	0	1	1	1	0	1	1	1	1	0	1	1	1	1	0	0	0	0	1	0	1	0	0	0	1	1	1	0	0	0	1	1	1	1	0	1	1	1	1	1	0	0	1	1	1	0
+potato_2_2	6	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	1	1	0	1	1	1	0	1	1	1	1	0	1	1	1	1	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0	0	1	0	1	1	0	1	1	1	1	1	0	0	1	0	0	0
+slink_2_1	5	0	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0	0	1	0	0	1	0	0	1	1	1	1	0	0	1	0	1	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0	0	1	0	1	1	0	0	1	1	1	1	0	0	1	0	0	0
+hamm_2	4	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	0	1	0	0	1	1	1	1	0	0	0	0	1	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0	0	0	0	1	1	0	0	1	1	1	1	0	0	1	0	0	0
+bo_1_3	3	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0	1	0	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	1	1	0	0	0	1	1	1	0	0	1	0	0	0
+rex_1_2	2	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	1	0	0	0	0	1	0	1	0	0	1	0	0	0
+buzz_1_1	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	1	0	0	0	0	1	0	1	0	0	1	0	0	0
+;
