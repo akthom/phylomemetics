@@ -12,17 +12,16 @@ END;
 BEGIN CHARACTERS;
 	TITLE  'Debian - simple presence/absence';
 	DIMENSIONS  NCHAR=85;
-	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2";
+	FORMAT DATATYPE = STANDARD GAP = - MISSING = ? SYMBOLS = "  0 1 2 3 4 5 6 7 8 9 ";
 	CHARSTATELABELS
-	version, 	EOL, 	CDs, 	Installation, 	DefaultDesktop, 	Calligra, 	Goffice, 	Koffice, 	OO_o, 	e, 	amd64, 	arm64, 	armel, 	armhf, 	i386, 	mips, 	mipsel, 	powerpc, 	ppc64el, 	s390x, 	sparc, 	alpha, 	arm, 	hppa, 	ia64, 	s390, 	m68k, 	Btrfs, 	ext3, 	ext4, 	JFS, 	ReiserFS, 	XFS, 	Asianlanguagesupport, 	abiword, 	alsa-lib, 	ati-driver, 	bash, 	bind, 	chromium, 	cups, 	dhcp, 	e2fsprogs, 	firefox, 	freetype, 	gcc, 	gimp, 	glibc, 	gnome-shell, 	gnucash, 	gnumeric, 	grub, 	gtk_plus, 	httpd, 	inkscape, 	k3b, 	kmod, 	libgnome, 	libreoffice, 	linux, 	lxde-common, 	mariadb, 	mate-desktop, 	mesa, 	mysql, 	nautilus, 	NVIDIA, 	openbox, 	openjdk, 	openssh, 	openssl, 	perl, 	php, 	plasma-desktop, 	postfix, 	postgresql, 	Python, 	qt, 	samba, 	systemd, 	thunderbird, 	vim, 	vlc, 	xfdesktop, 	xorg-server
-	;
+	1 version, 	2 EOL, 	3 CDs, 	4 Installation, 	5 DefaultDesktop, 	6 Calligra, 	7 Goffice, 	8 Koffice, 	9 OO_o, 	10 e, 	11 amd64, 	12 arm64, 	13 armel, 	14 armhf, 	15 i386, 	16 mips, 	17 mipsel, 	18 powerpc, 	19 ppc64el, 	20 s390x, 	21 sparc, 	22 alpha, 	23 arm, 	24 hppa, 	25 ia64, 	26 s390, 	27 m68k, 	28 Btrfs, 	29 ext3, 	30 ext4, 	31 JFS, 	32 ReiserFS, 	33 XFS, 	34 Asianlanguagesupport, 	35 abiword, 	36 alsa_lib, 	37 ati_driver, 	38 bash, 	39 bind, 	40 chromium, 	41 cups, 	42 dhcp, 	43 e2fsprogs, 	44 firefox, 	45 freetype, 	46 gcc, 	47 gimp, 	48 glibc, 	49 gnome_shell, 	50 gnucash, 	51 gnumeric, 	52 grub, 	53 gtk_plus, 	54 httpd, 	55 inkscape, 	56 k3b, 	57 kmod, 	58 libgnome, 	59 libreoffice, 	60 linux, 	61 lxde_common, 	62 mariadb, 	63 mate_desktop, 	64 mesa, 	65 mysql, 	66 nautilus, 	67 NVIDIA, 	68 openbox, 	69 openjdk, 	70 openssh, 	71 openssl, 	72 perl, 	73 php, 	74 plasma_desktop, 	75 postfix, 	76 postgresql, 	77 Python, 	78 qt, 	79 samba, 	80 systemd, 	81 thunderbird, 	82 vim, 	83 vlc, 	84 xfdesktop, 	85 xorg_server, 	;
 	MATRIX
-	sid_unstable	15	?	0	2	1	1	1	1	0	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	0	1	1	1	1	1	1	2	1	1	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
-stretch_testing	14	?	0	2	1	1	1	1	0	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	0	1	1	1	1	1	1	2	1	1	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
-jessie_8	13	1	0	2	1	1	1	1	0	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	0	1	1	1	1	1	1	2	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
-wheezy_7	12	1	1	2	1	1	1	1	0	1	1	0	1	0	1	1	1	1	0	1	1	0	0	0	1	0	0	1	1	1	1	1	1	2	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
-squeeze_6	11	1	1	2	1	0	1	1	1	0	1	0	1	0	1	1	1	1	0	0	1	0	0	0	1	1	0	0	1	1	1	1	1	2	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	1	1	0	1	1	1	1	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1
-lenny_5	10	0	1	2	1	0	1	1	1	0	1	0	1	0	1	1	1	1	0	0	1	1	1	1	1	1	0	0	1	0	1	1	1	2	1	1	1	1	1	0	1	1	1	1	1	1	1	1	0	1	1	1	1	1	1	1	0	1	1	1	1	0	0	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	0	1	1	1	1	1
+	sid_unstable	9	?	0	2	1	1	1	1	0	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	0	1	1	1	1	1	1	2	1	1	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+stretch	9	?	0	2	1	1	1	1	0	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	0	1	1	1	1	1	1	2	1	1	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+jessie_8	9	1	0	2	1	1	1	1	0	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	0	0	0	1	1	1	1	1	1	2	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+wheezy_7	9	1	1	2	1	1	1	1	0	1	1	0	1	0	1	1	1	1	0	1	1	0	0	0	1	0	0	1	1	1	1	1	1	2	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+squeeze_6	9	1	1	2	1	0	1	1	1	0	1	0	1	0	1	1	1	1	0	0	1	0	0	0	1	1	0	0	1	1	1	1	1	2	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	1	1	0	1	1	1	1	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1
+lenny_5	9	0	1	2	1	0	1	1	1	0	1	0	1	0	1	1	1	1	0	0	1	1	1	1	1	1	0	0	1	0	1	1	1	2	1	1	1	1	1	0	1	1	1	1	1	1	1	1	0	1	1	1	1	1	1	1	0	1	1	1	1	0	0	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	0	1	1	1	1	1
 etch_4	9	0	1	2	1	0	1	1	1	0	1	0	0	0	1	1	1	1	0	0	1	1	1	1	1	1	1	0	1	0	1	1	1	2	1	1	1	1	1	0	1	1	1	1	1	1	1	1	0	1	1	1	1	1	1	1	0	1	1	1	0	0	0	1	1	1	1	1	0	1	1	1	1	0	1	1	1	1	1	0	1	1	1	1	1
 sarge_3_1	8	0	1	1	1	0	1	1	1	0	0	0	0	0	1	1	1	1	0	0	1	1	1	1	1	1	1	0	1	0	1	1	1	1	1	1	0	1	1	0	1	1	1	1	1	1	1	1	0	1	1	1	1	1	1	1	0	1	1	1	0	0	0	1	1	1	1	1	0	1	1	1	1	0	1	1	1	1	1	0	1	1	1	1	0
 woody_3	7	0	1	1	1	0	0	1	0	0	0	0	0	0	1	1	1	1	0	0	1	1	1	1	1	1	1	0	1	0	0	1	0	1	1	1	0	1	1	0	1	1	1	0	1	1	1	1	0	1	1	1	1	0	0	0	0	1	0	1	0	0	0	1	1	1	0	0	0	1	1	1	1	0	1	1	1	1	1	0	0	1	1	1	0
@@ -33,3 +32,4 @@ bo_1_3	3	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0
 rex_1_2	2	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	1	0	0	0	0	1	0	1	0	0	1	0	0	0
 buzz_1_1	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	1	0	0	0	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	1	0	0	0	0	1	0	1	0	0	1	0	0	0
 ;
+end;
